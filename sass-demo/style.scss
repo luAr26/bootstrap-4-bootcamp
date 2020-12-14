@@ -1,0 +1,14 @@
+$bg-color: #c4eeff;
+
+body {
+  background-color: $bg-color;
+  font-family: sans-serif;
+}
+
+nav {
+  li {
+    a {
+      background: purple;
+    }
+  }
+}
