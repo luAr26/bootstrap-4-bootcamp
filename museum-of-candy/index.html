@@ -55,6 +55,53 @@
         </div>
       </div>
     </section>
+    <section class="container-fluid px-0">
+      <!-- ROW 1 -->
+      <div class="row mx-0 align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="img/milk.png" alt="Milk" class="img-fluid">
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-12 offset-md-0 col-lg-8 offset-lg-2 blurb mb-5 mb-md-0">
+              <h2 class="text-uppercase">Museum of candy</h2>
+              <img src="img/lolli_icon.png" alt="Lolli" class="d-none d-lg-inline">
+              <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid veniam soluta at dolor culpa exercitationem possimus aut velit incidunt odit!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ROW 2 -->
+      <div class="row mx-0 align-items-center content">
+        <div class="col-md-6 text-center">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-12 offset-md-0 col-lg-8 offset-lg-2 blurb mb-5 mb-md-0">
+              <h2 class="text-uppercase">Museum of candy</h2>
+              <img src="img/lolli_icon.png" alt="Lolli" class="d-none d-lg-inline">
+              <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid veniam soluta at dolor culpa exercitationem possimus aut velit incidunt odit!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="img/gumball.png" alt="Milk" class="img-fluid">
+        </div>
+      </div>
+      <!-- ROW 3 -->
+      <div class="row mx-0 align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="img/sprinkles.png" alt="Milk" class="img-fluid">
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-12 offset-md-0 col-lg-8 offset-lg-2 blurb mb-5 mb-md-0">
+              <h2 class="text-uppercase">Museum of candy</h2>
+              <img src="img/lolli_icon.png" alt="Lolli" class="d-none d-lg-inline">
+              <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid veniam soluta at dolor culpa exercitationem possimus aut velit incidunt odit!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
@@ -67,6 +114,14 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function() {
+        $(document).scroll(function() {
+          const $nav = $('#mainNavbar');
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
